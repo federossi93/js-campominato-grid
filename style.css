@@ -15,11 +15,29 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(80, 84, 84);
+    background-color: rgb(138, 141, 141);
 }
 
 .casella{
     width: calc(100% / 10);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.casella_media{
+    width: calc(100% / 9);
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.casella_facile{
+    width: calc(100% / 7);
     aspect-ratio: 1/1;
     border: 1px solid black;
     display: flex;

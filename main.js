@@ -21,22 +21,50 @@ btn.addEventListener("click",function(){
 //creare un ciclo per creare le caselle con dentro 1 numero da 1 a 100
 //creo elemento nella dom e lo appendo al contenitore
 
-let num = 100
+let numDiff = 100
 
-for (let i = 1; i <= num; i++) {
-    let casella = document.createElement("div")
-    casella.classList.add("casella")
-    casella.append(i)
-    container.append(casella)
-    casella.addEventListener("click",function() {
-        console.log(i);
-    casella.classList.toggle("lightblue")
-    })
+let numMedio = 81
+
+let numFacile = 49
+
+let scelta = prompt("Scegli Difficoltà (difficile , medio , facile)")
+
+if (scelta == "difficile") {
+    for (let i = 1; i <= numDiff; i++) {
+        let casella = document.createElement("div")
+        casella.classList.add("casella")
+        casella.append(i)
+        container.append(casella)
+        casella.addEventListener("click",function() {
+            console.log(this);
+        casella.classList.toggle("lightblue")
+        })
+    }
+
+}else if(scelta == "medio"){
+    for (let i = 1; i <= numMedio; i++) {
+        let casella = document.createElement("div")
+        casella.classList.add("casella_media")
+        casella.append(i)
+        container.append(casella)
+        casella.addEventListener("click",function() {
+            console.log(this);
+        casella.classList.toggle("lightblue")
+        })
+    }
+
+}else if(scelta == "facile"){
+    for (let i = 1; i <= numFacile; i++) {
+        let casella = document.createElement("div")
+        casella.classList.add("casella_facile")
+        casella.append(i)
+        container.append(casella)
+        casella.addEventListener("click",function() {
+            console.log(this);
+        casella.classList.toggle("lightblue")
+        })
+    }
 }
-
-
-
-
 
 //creo un evento click per colorare la casella e mostrare in console il valore della casella
 //con this
