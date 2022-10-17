@@ -18,5 +18,20 @@ btn.addEventListener("click",function(){
     container.classList.remove("d_none")
 })
 
+//creare un ciclo per creare le caselle con dentro 1 numero da 1 a 100
+//creo elemento nella dom e lo appendo al contenitore
+
+let num = 100
+
+//let casella = `<div class="casella"></div>`
+
+//container.insertAdjacentHTML("beforeend",casella)
+
+for (let i = 1; i <= num; i++) {
+    let casella = `<div class="casella">${i}</div>`
+    container.insertAdjacentHTML("beforeend",casella)
+    
+}
+
 
 
