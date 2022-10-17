@@ -15,7 +15,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
+    background-color: rgb(80, 84, 84);
 }
 
 .casella{
@@ -29,4 +29,8 @@
 
 .d_none{
     display: none;
+}
+
+.lightblue{
+    background-color: lightblue;
 }

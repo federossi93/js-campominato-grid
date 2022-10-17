@@ -23,15 +23,25 @@ btn.addEventListener("click",function(){
 
 let num = 100
 
-//let casella = `<div class="casella"></div>`
-
-//container.insertAdjacentHTML("beforeend",casella)
-
 for (let i = 1; i <= num; i++) {
-    let casella = `<div class="casella">${i}</div>`
-    container.insertAdjacentHTML("beforeend",casella)
-    
+    let casella = document.createElement("div")
+    casella.classList.add("casella")
+    casella.append(i)
+    container.append(casella)
+    casella.addEventListener("click",function() {
+        console.log(i);
+    casella.classList.toggle("lightblue")
+    })
 }
+
+
+
+
+
+//creo un evento click per colorare la casella e mostrare in console il valore della casella
+//con this
+
+
 
 
 
